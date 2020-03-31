@@ -19,7 +19,7 @@ a1 = Airplane.create :name => 'Virgin', :rows => '23', :cols => 'C'
 a2 = Airplane.create :name => 'Sun', :rows => '28', :cols => 'A'
 
 Reservation.destroy_all
-r1 = Reservation.create :rows => '23', :cols => 'C'
+r1 = Reservation.create :row => '23', :col => 'C'
 
 a1.flights << f1 << f2
 a2.flights << f2
