@@ -31,6 +31,12 @@
     <%= form.date_select :date %>
   </div>
 
+  <div class="field">
+    <%= form.label :airplane_id %>
+    <%= form.select :airplane_id, @airplanes.pluck(:name, :id), :include_blank => true %>
+  </div>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>
